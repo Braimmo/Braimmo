@@ -1197,6 +1197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charID: 0
   AccountID: 0
+  moneyText: {fileID: 1497844605}
+  gemText: {fileID: 1149998190}
 --- !u!4 &129813438
 Transform:
   m_ObjectHideFlags: 0
@@ -1291,7 +1293,7 @@ GameObject:
   - component: {fileID: 132411487}
   - component: {fileID: 132411486}
   m_Layer: 5
-  m_Name: cashMoney
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9301,14 +9303,14 @@ RectTransform:
   m_GameObject: {fileID: 1497844603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9997701, y: 0.9997701, z: 0.9997701}
+  m_LocalScale: {x: 1.0000203, y: 1.0000203, z: 1.0000203}
   m_Children: []
-  m_Father: {fileID: 1738076020}
-  m_RootOrder: 2
+  m_Father: {fileID: 2105126200}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -251.5, y: 19.700047}
+  m_AnchoredPosition: {x: 31.807983, y: 0.000017166138}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497844605
@@ -10416,7 +10418,6 @@ RectTransform:
   m_Children:
   - {fileID: 132411485}
   - {fileID: 2105126200}
-  - {fileID: 1497844604}
   m_Father: {fileID: 700556132}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11571,7 +11572,7 @@ GameObject:
   - component: {fileID: 2105126202}
   - component: {fileID: 2105126201}
   m_Layer: 5
-  m_Name: freeMoney
+  m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11589,6 +11590,7 @@ RectTransform:
   m_LocalScale: {x: 0.99974996, y: 0.99974996, z: 0.99974996}
   m_Children:
   - {fileID: 1484603091}
+  - {fileID: 1497844604}
   m_Father: {fileID: 1738076020}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

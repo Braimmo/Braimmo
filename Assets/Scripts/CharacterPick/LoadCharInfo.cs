@@ -15,11 +15,13 @@ namespace CharacterPick
         public StageInformation stageInfo;
         public int characterNum;
         public int enemyNum;
-        public int AccountID = 0; // 계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+        public int AccountID;
         public passDataBetweenScene passData;
 
         void Awake()
         {
+            AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+
             if (GameObject.Find("PassStageInfoBetweenScenes_dontDestroy") != null)
             {
                 print("loadCharInfo find pass");

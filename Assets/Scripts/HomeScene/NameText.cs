@@ -13,9 +13,10 @@ public class NameText : MonoBehaviour
     public Text text;
     UserInformation data;
     String name;
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         data = new UserInformation();
         string JData = File.ReadAllText(Application.dataPath + "/Resources/Json_AccountInfo/" + AccountID.ToString() + "/userInformation.json");
         data = JsonConvert.DeserializeObject<UserInformation>(JData);

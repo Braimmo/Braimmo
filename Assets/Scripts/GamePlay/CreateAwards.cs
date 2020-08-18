@@ -9,6 +9,11 @@ using UnityEditor;
 
 public class CreateAwards : MonoBehaviour
 {
+    public int AccountID;
+    void Awake()
+    {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+    }
     public void randomizeAward_Condition(int stageID,GameObject award_)
     {
         AwardDB_Condition toAddAwardDB = new AwardDB_Condition();
@@ -35,7 +40,6 @@ public class CreateAwards : MonoBehaviour
         string thePrefab = AwardDB[selectedIndex].conditionPrefab;
         int selectedValue = Random.Range(theMin,theMax);
 
-        int AccountID = GameObject.Find("PassStageInfoBetweenScenes_dontDestroy").GetComponent<passDataBetweenScene>().AccountID;
         jsonData = File.ReadAllText(Application.dataPath + "/Resources/Json_AccountInfo/" + AccountID.ToString()+ "/ConditionData.json");
         conditionList = JsonConvert.DeserializeObject<List<Condition_CodeModifier>>(jsonData);
 

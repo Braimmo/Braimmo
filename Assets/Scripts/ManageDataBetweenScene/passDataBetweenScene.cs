@@ -12,9 +12,10 @@ public class passDataBetweenScene : MonoBehaviour
     //age -> story -> char -> inGame으로 넘기는 data 저장
     public static passDataBetweenScene passData;
     public _StageInformation stageInfo;
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         if (passData == null)
             passData = this;
         else if (passData != this)

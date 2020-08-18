@@ -8,12 +8,14 @@ using System.IO;
 
 public class MakeMailJson : MonoBehaviour
 {
-    int AccountID = 0; // 받아와야된다. ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    int AccountID = 0;
     public List<MailboxReward> mailboxRewards;
 
-    void Start(){
-        Debug.Log("makeMailJson");
-        makeMailJson();
+    void Start()
+    {
+      AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+      Debug.Log("makeMailJson");
+      makeMailJson();
     }
   public void makeMailJson(){
         mailboxRewards = new List<MailboxReward>();

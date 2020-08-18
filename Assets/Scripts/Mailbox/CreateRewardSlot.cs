@@ -12,12 +12,13 @@ public class CreateRewardSlot : MonoBehaviour
     public GameObject reward_Slot;
     public Text Title_text;
     public static List<MailboxReward> mailboxRewards = new List<MailboxReward>();
-    int AccountID = 0;//임시 값 ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    int AccountID;
     int reward_count; 
     public static GameObject[] newRewardSlot;
     
     public void Start()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         string JData = File.ReadAllText(Application.dataPath + "/Resources/Json_AccountInfo/" + AccountID.ToString() + "/mailboxData.json");
         mailboxRewards = JsonConvert.DeserializeObject<List<MailboxReward>>(JData);
         reward_count = mailboxRewards.Count;

@@ -9,7 +9,12 @@ namespace AgePick{
     public class saveStageInfo : MonoBehaviour
     {
         public StageInformation stageInfo;
-        public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+        public int AccountID;
+
+        void Awake()
+        {
+            AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+        }
         //public static saveStageInfo instance;
 
         // void Awake(){

@@ -22,12 +22,13 @@ public class stageExplainPanel : MonoBehaviour
     StoryModeManager storyModeManager;
     AsyncOperation operation;
 
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
 
     public Award[] awards;
 
     public void Awake()
     {   
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         storyModeManager = StoryUIManager.GetComponent<StoryModeManager>();
         GameObject codeAward = transform.Find("code award").gameObject;
         awards = codeAward.GetComponentsInChildren<Award>();

@@ -15,8 +15,11 @@ public class ExpBar : MonoBehaviour
     UserInformation data;
     float currentExp;
     float maxExp;
-    public int AccountID = 0; // 계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
-
+    public int AccountID;
+    void Awake()
+    {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+    }
     void Start()
     {
         data = new UserInformation();

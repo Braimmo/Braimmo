@@ -36,7 +36,7 @@ public class Actions : MonoBehaviour
     public List<GameObject> attackOffList = new List<GameObject>(); public int attackOffListNum = 0;
     public List<GameObject> itemOffList = new List<GameObject>(); public int itemOffListNum = 0;
     public List<Action_CodeModifier>actionList = new List<Action_CodeModifier>();
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
     public void _save()
     {
         string jdata = JsonConvert.SerializeObject(actionList);
@@ -59,6 +59,7 @@ public class Actions : MonoBehaviour
     }
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         passedID = GameObject.Find("charID_DontDestroy").GetComponent<fromCharToCode>().name;
         TextAsset JData;
 

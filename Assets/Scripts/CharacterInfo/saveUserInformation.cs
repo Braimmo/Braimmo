@@ -9,10 +9,12 @@ public class saveUserInformation : MonoBehaviour
 {
     public UserInformation userInformation;
     public static saveUserInformation instance;
-    public int AccountID = 0; // 계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
 
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+
         Debug.Log("hi");
         if (instance == null)
             instance = this;

@@ -13,10 +13,11 @@ public class Resetter : MonoBehaviour
     public List<Condition_CodeModifier>conditionList = new List<Condition_CodeModifier>();
     public List<Action_CodeModifier>actionList = new List<Action_CodeModifier>();
     public TargetOrderInformation theTargetOrderInformation;
-    public int AccountID = 0; // 계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
 
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         theName = "Alice";
         theTargetOrderInformation = new TargetOrderInformation();
 

@@ -15,13 +15,14 @@ public class JsonStoryStageLoad : MonoBehaviour
     //StoryModeManager storyModeManager;
     UserInformation userInformation;
     [SerializeField] StoryModeManager storyModeManager;
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
 
 
     int ageID = 0;
 
-    public void Awake(){
-
+    public void Awake()
+    {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         if (GameObject.Find("PassStageInfoBetweenScenes_dontDestroy") != null)
         {
              ageID = GameObject.Find("PassStageInfoBetweenScenes_dontDestroy").GetComponent<_StageInformation>().ageID;

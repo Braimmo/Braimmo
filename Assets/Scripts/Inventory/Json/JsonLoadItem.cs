@@ -22,17 +22,26 @@ public class JsonLoadItem : MonoBehaviour
     public List<CharacterInformation_item> characterStats;
     public List<JsonEquippableItem> jsonEquippableItem;
     public List<List<EquippableItem>> allEquippedItems;
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
+    public Text moneyText;
+    public Text gemText;
+    public UserInformation theUserInfo;
 
     public void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+        string jsonData = File.ReadAllText(Application.dataPath + "/Resources/Json_AccountInfo/" + AccountID.ToString() + "/userInformation.json");
+        theUserInfo = JsonConvert.DeserializeObject<UserInformation>(jsonData);
+        moneyText.text = theUserInfo.money.ToString();
+        gemText.text = theUserInfo.gem.ToString();
+
         //load();
         print("json load awake");
         characterStat = new CharacterInformation_item();
         unequippedItems = new List<EquippableItem>();
         equippedItems = new List<EquippableItem>();
 
-        string jsonData = File.ReadAllText(Application.dataPath + "/Resources/Json_AccountInfo/" + AccountID.ToString() + "/ItemsInfo.json");
+        jsonData = File.ReadAllText(Application.dataPath + "/Resources/Json_AccountInfo/" + AccountID.ToString() + "/ItemsInfo.json");
         jsonEquippableItem = JsonConvert.DeserializeObject<List<JsonEquippableItem>>(jsonData);
 
 

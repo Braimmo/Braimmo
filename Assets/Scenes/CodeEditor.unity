@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Alicethefuck
+  m_text: FuckFuck
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b9c18283d5f758a4a97ff243de04492c, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: d5e3ff126cdd8014fbd94c39658ed444, type: 2}
@@ -1252,7 +1252,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19.2
+  m_fontSize: 24.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1260,7 +1260,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 514
-  m_characterSpacing: -8.1
+  m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0.8481871}
   m_textInfo:
     textComponent: {fileID: 277286918}
-    characterCount: 12
+    characterCount: 8
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -2387,7 +2387,7 @@ GameObject:
   - component: {fileID: 516404932}
   - component: {fileID: 516404931}
   m_Layer: 1
-  m_Name: TMP SubMeshUI [won Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [won_White + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

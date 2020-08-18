@@ -13,7 +13,11 @@ public class LevelText : MonoBehaviour
     public Text text;
     UserInformation data;
     int level;
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
+    void Awake()
+    {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+    }
     void Start()
     {
         data = new UserInformation();

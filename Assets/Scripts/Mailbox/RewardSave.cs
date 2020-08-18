@@ -28,7 +28,7 @@ public class RewardSave : MonoBehaviour
     public List<CharacterInformation_item> characterList = new List<CharacterInformation_item>();
     static RewardSave newMailPanel;
 
-    public int AccountID = 0; // 계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
     string JData;
     int reward_count;    
    
@@ -36,7 +36,10 @@ public class RewardSave : MonoBehaviour
     int check_reward_exp_account = 0;   int check_reward_exp_character = 0;
     int check_reward_item =0;   int check_reward_condition = 0;         int check_reward_action = 0;
 
-
+    void Awake()
+    {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+    }
     public void onClickMail(){
     MailboxReward mailboxReward = CreateRewardSlot.mailboxRewards[MailListManager.siblingIndex];
 

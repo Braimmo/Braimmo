@@ -18,10 +18,11 @@ public class TargetOrder : MonoBehaviour
     public GameObject[] ForOrder;
     public TargetOrderInformation theTargetOrderInformation;
     public string closeFar = "close";
-    public int AccountID = 0; // 계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
     public string passedID;
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         passedID = GameObject.Find("charID_DontDestroy").GetComponent<fromCharToCode>().name;
         ForOrder = new GameObject[5];
         ForOrder[0] = ForBoss;

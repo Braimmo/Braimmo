@@ -1,10 +1,10 @@
 {
   "name": "yechan",
-  "experience": 1240.0,
-  "gem": 22,
-  "money": 19500.0,
+  "experience": 500.0,
+  "gem": 2,
+  "money": 1000.0,
   "ageID": 1,
-  "stageID": 73,
+  "stageID": 1,
   "tutorialStage": 3,
   "level": 1
 }

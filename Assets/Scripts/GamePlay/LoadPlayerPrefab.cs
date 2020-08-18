@@ -14,9 +14,10 @@ public class LoadPlayerPrefab : MonoBehaviour
     public List<CharacterInformation_item> allCharList = new List<CharacterInformation_item>();
     public List<SelectedCharacterIDs> characterIDsList = new List<SelectedCharacterIDs>();
     public List<CharacterInformation_item> characterInfoListON = new List<CharacterInformation_item>();
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         loadCharacterIDsFromJson();
         loadCharacterStatsFromJson();
         instantiateCharacterON();

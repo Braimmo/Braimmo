@@ -52,7 +52,7 @@ public class Conditions : MonoBehaviour
     public List<GameObject> radiusOffList = new List<GameObject>(); public int radiusOffListNum = 0; // 반경 OFF 관련
     public List<GameObject> actionCheckerOffList = new List<GameObject>(); public int actionCheckerOffListNum = 0; // 액션온 OFF 관련
 
-    public int AccountID = 0; // 계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
     public void _save()
     {
         string jdata = JsonConvert.SerializeObject(conditionList);
@@ -75,6 +75,7 @@ public class Conditions : MonoBehaviour
     }
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         passedID = GameObject.Find("charID_DontDestroy").GetComponent<fromCharToCode>().characterID;
         passedName = GameObject.Find("charID_DontDestroy").GetComponent<fromCharToCode>().name;
         TextAsset JData;

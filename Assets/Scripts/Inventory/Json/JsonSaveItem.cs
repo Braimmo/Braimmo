@@ -25,10 +25,11 @@ public class JsonSaveItem : MonoBehaviour
     public List<CharacterInformation_item> characterStats;
     public List<List<EquippableItem>> allEquippedItems;
     public int charID = 0;
-    public int AccountID = 0; // 계정이름 ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
 
     void Awake()
     {   
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         jsonEquippableItems = new List<JsonEquippableItem>();
         characterStat = new CharacterInformation_item();
 

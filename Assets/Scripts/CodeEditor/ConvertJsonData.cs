@@ -19,10 +19,11 @@ public class ConvertJsonData : MonoBehaviour
     public List<Condition_forGame> conditionList_forGame = new List<Condition_forGame>();
     public List<List<Condition_forGame>> conditionList_Total = new List<List<Condition_forGame>>();
     public List<Finalizer> finalizeString = new List<Finalizer>();
-    public int AccountID = 0;//계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
 
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         actionManager = gameObject.GetComponent<Actions>();
         conditionManager = gameObject.GetComponent<Conditions>();
     }

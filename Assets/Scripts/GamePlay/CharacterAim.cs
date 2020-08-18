@@ -14,10 +14,10 @@ public class CharacterAim : MonoBehaviour
     public GameObject theArrow;
     public float theArrowYPosition;
     public TargetOrderInformation theTargetOrderInformation;
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
-
+    public int AccountID;
     void Awake()
-    {        
+    {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         myPosition = this.transform.parent.transform.position;
         haveAim = false;
         theArrowYPosition = 5.0f;

@@ -24,9 +24,11 @@ public class CharacterInfo : MonoBehaviour
     float maxExp;
     float money, gem;
 
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
-
-    // Start is called before the first frame update
+    public int AccountID;
+    void Awake()
+    {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+    }
     void Start()
     {
         data = new UserInformation();

@@ -6,7 +6,12 @@ using System.Linq;
 
 public class LoadAIFromJson : MonoBehaviour
 {
-    public int AccountID = 0; //계정이름ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+    public int AccountID;
+
+    void Awake()
+    {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
+    }
     public List<Action_> LoadAIFromJson_(string theName)
     {
         //적이면 Resources/Json_GameInfo에서 로드해야되고 아군이면 Resources/Json_AccountInfo에서 로드해야된다!

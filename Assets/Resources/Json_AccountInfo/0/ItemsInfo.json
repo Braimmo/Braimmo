@@ -38,25 +38,5 @@
     "itemEquipped": true,
     "itemID_forAccount": 1,
     "charID": 0
-  },
-  {
-    "itemID": "1_0_0_0",
-    "itemName": "낡은 철 갑옷",
-    "healthAdd": 0.0,
-    "healthMulti": 0.0,
-    "damageAdd": 0.0,
-    "damageMulti": 0.0,
-    "weaponRange": 0.0,
-    "speedAdd": 0.0,
-    "speedMulti": 0.0,
-    "defenseAdd": 0.0,
-    "defenseMulti": 0.0,
-    "criticalDamageAdd": 0.0,
-    "criticalDamageMulti": 0.0,
-    "criticalRateAdd": 0.0,
-    "criticalRateMulti": 0.0,
-    "itemEquipped": false,
-    "itemID_forAccount": 2,
-    "charID": -1
   }
 ]
