@@ -146,7 +146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5, y: -34.3}
+  m_AnchoredPosition: {x: 27.9, y: -39.3}
   m_SizeDelta: {x: 1600, y: 562.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2623128
@@ -3516,6 +3516,7 @@ RectTransform:
   - {fileID: 717199158}
   - {fileID: 2623127}
   - {fileID: 323656263}
+  - {fileID: 1844940519}
   m_Father: {fileID: 1274068302}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7752,6 +7753,90 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844906323}
+  m_CullTransparentMesh: 0
+--- !u!1 &1844940518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1844940519}
+  - component: {fileID: 1844940521}
+  - component: {fileID: 1844940520}
+  m_Layer: 5
+  m_Name: Text (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1844940519
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844940518}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.10000142, z: 0.099999994}
+  m_Children: []
+  m_Father: {fileID: 925195644}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -69.35, y: 0.11346}
+  m_SizeDelta: {x: 587.05, y: 1002.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1844940520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844940518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 26
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 100
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Type-itemUniqueID CHART\r\n0 Helmet\r\n0-0 \uCCA0 \uD5EC\uBA67\r\n0-1 \uCC9C
+    \uBAA8\uC790\r\n0-2 \uAC00\uC8FD \uBAA8\uC790\r\n1 Chest\r\n1-0 \uCCA0 \uAC11\uC637\r\n1-1
+    \uC154\uCE20\r\n1-2 \uAC00\uC8FD \uC790\uCF13\r\n2 Glove\r\n2-0 \uCCA0 \uAE00\uB7EC\uBE0C\r\n2-1
+    \uAC00\uC8FD \uC7A5\uAC11\r\n2-2 \uD138\uC7A5\uAC11\r\n3 Boots\r\n3-0 \uC9DA\uC2E0\r\n3-1
+    \uCABC\uB9AC\r\n3-2 \uBD80\uCE20\r\n4 Weapon\r\n4-0 \uC6D0\uB4DC\r\n4-1 \uC2A4\uD0DC\uD504\r\n4-2
+    \uAC80\r\n5 Potion\r\n5-0 \uCCB4\uB825 \uD3EC\uC158\r\n5-1 \uACF5\uACA9\uB825
+    \uD3EC\uC158\r\n5-2 \uBC29\uC5B4\uB825 \uD3EC\uC158\r\n6 Accessory\r\n6-0 \uC9C4\uC8FC
+    \uBAA9\uAC78\uC774\r\n6-1 \uC9C4\uC8FC \uD314\uCC0C\r\n6-2 \uC9C4\uC8FC \uADC0\uAC78\uC774"
+--- !u!222 &1844940521
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844940518}
   m_CullTransparentMesh: 0
 --- !u!1 &1854183348
 GameObject:

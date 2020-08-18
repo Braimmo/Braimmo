@@ -22,9 +22,11 @@ public class GameEndCheck : MonoBehaviour
     public Canvas endCanvas;
     public GameObject awardPage_1, awardPage_3;
     public bool innerEndCheck;
+    public int AccountID;
 
     void Awake()
     {
+        AccountID = GameObject.Find("AccountID_DontDestroy").GetComponent<AccountID>().theID;
         endCheck = false;
         innerEndCheck = false;
         dataToPass = new DataFromGamePlay();
@@ -87,29 +89,40 @@ public class GameEndCheck : MonoBehaviour
     public void CreateDataToPass(string winLose)
     {
         dataToPass.gameWin_Lose = winLose;
-
+        float maxExp = GameObject.Find("PassStageInfoBetweenScenes_dontDestroy").GetComponent<StageInformation>().experience;
+        float maxMoney = GameObject.Find("PassStageInfoBetweenScenes_dontDestroy").GetComponent<StageInformation>().money;
+        float maxGem = GameObject.Find("PassStageInfoBetweenScenes_dontDestroy").GetComponent<StageInformation>().gem;
         if(winLose == "Win")
         {
-            dataToPass.experience = 99.9f;
-            dataToPass.money = 999.9f;
-            dataToPass.gem = 9;
+            dataToPass.experience = maxExp;
+            dataToPass.money = Mathf.RoundToInt(Random.Range(maxMoney * 8 / 10, maxMoney + 1));
+            dataToPass.gem = Mathf.RoundToInt(Random.Range(maxGem * 8 / 10, maxMoney + 1));
             dataToPass.awardIDs = IDsToPass;
         }
         else if(winLose == "Lose")
         {
-            dataToPass.experience = 11.1f;
-            dataToPass.money = 111.1f;
-            dataToPass.gem = 1;
+            dataToPass.experience = Mathf.RoundToInt(Random.Range(maxExp * 1 / 10, maxExp * 2 / 10));
+            dataToPass.money = Mathf.RoundToInt(Random.Range(maxMoney * 1 / 10, maxMoney * 2 / 10));
+            dataToPass.gem = 0;
             dataToPass.awardIDs = IDsToPass;
         }
 
-        GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().experience = dataToPass.experience;
-        GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().money = dataToPass.money;
-        GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().gem = dataToPass.gem;
-        GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().gameWin_Lose = dataToPass.gameWin_Lose;
-        GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().awardIDs = dataToPass.awardIDs;
+        string jsonData = File.ReadAllText(Application.dataPath + "/Resources/Json_AccountInfo/" + AccountID.ToString() + "/userInformation.json");
+        UserInformation theUserInfo = JsonConvert.DeserializeObject<UserInformation>(jsonData);
+        theUserInfo.gem += dataToPass.gem;
+        theUserInfo.money += dataToPass.money;
+        theUserInfo.experience += dataToPass.experience;
+        string jdata = JsonConvert.SerializeObject(theUserInfo);
+        jdata = JValue.Parse(jdata).ToString(Formatting.Indented);
+        File.WriteAllText(Application.dataPath + "/Resources/Json_AccountInfo/" + AccountID.ToString() + "/userInformation.json",jdata); //ID 추가해주기
 
-        WriteJson();
+
+        //GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().experience = dataToPass.experience;
+        //GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().money = dataToPass.money;
+        //GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().gem = dataToPass.gem;
+        //GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().gameWin_Lose = dataToPass.gameWin_Lose;
+        //GameObject.Find("GameEnd_DontDestroy").GetComponent<FromGameToEnd>().awardIDs = dataToPass.awardIDs;
+        //WriteJson();
     }
 
     public void WriteJson()
@@ -259,11 +272,21 @@ public class GameEndCheck : MonoBehaviour
         }
         else if(stageID == 1)
         {
-
+            this.transform.GetComponent<CreateAwards>().randomizeAward_Condition(stageID,award_1);
+            this.transform.GetComponent<CreateAwards>().randomizeAward_Item(stageID,award_2);
+            award_3.SetActive(false);
+            award_4.SetActive(false);
+            award_5.SetActive(false);
+            award_6.SetActive(false);
         }
         else if(stageID == 2)
         {
-
+            this.transform.GetComponent<CreateAwards>().randomizeAward_Condition(stageID,award_1);
+            this.transform.GetComponent<CreateAwards>().randomizeAward_Item(stageID,award_2);
+            this.transform.GetComponent<CreateAwards>().randomizeAward_Item(stageID,award_3);
+            award_4.SetActive(false);
+            award_5.SetActive(false);
+            award_6.SetActive(false);
         }
         //1-1 보상은 1. 액션-앞으로가기 2.조건-적이 0명 이하
         //1-2 보상은 1. 액션-포션사용   2.조건-HP가20%이하  3.아이템-포션

@@ -226,7 +226,7 @@ public class CreateAwards : MonoBehaviour
                 forPrefab = "Weapon";
                 switch(split_itemTotalID[2])
                 {
-                    case 0:   name_type = "무기1"   ;   break;
+                    case 0:   name_type = "원드"   ;   break;
                     case 1:   name_type = "무기2" ;   break;
                     case 2:   name_type = "무기3 " ;   break;
                     default:    break;

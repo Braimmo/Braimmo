@@ -1,0 +1,30 @@
+[
+  {
+    "conditionID": 101,
+    "range_min": 0,
+    "range_max": 50,
+    "upDownOn": "Up",
+    "conditionPrefab": "Condition1"
+  },
+  {
+    "conditionID": 101,
+    "range_min": 20,
+    "range_max": 60,
+    "upDownOn": "Up",
+    "conditionPrefab": "Condition1"
+  },
+  {
+    "conditionID": 102,
+    "range_min": 50,
+    "range_max": 100,
+    "upDownOn": "Down",
+    "conditionPrefab": "Condition1"
+  },
+  {
+    "conditionID": 102,
+    "range_min": 70,
+    "range_max": 90,
+    "upDownOn": "Down",
+    "conditionPrefab": "Condition1"
+  }
+]
