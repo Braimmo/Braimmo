@@ -1,0 +1,90 @@
+[
+  {
+    "AgeID": 0,
+    "AgeSprite": 0,
+    "AgeName": "이상한 나라의 앨리스",
+    "AgeInfo": "챕터 1은 이상한 나라의 앨리스입니다.\n붉은 여왕의 분노에 맞서 블러드 루비를 탈환하세요 .\n ",
+    "EmblemSprite": 0,
+    "EmblemName": "블러드 루비",
+    "EmblemInfo": "공격력: 313up\n방어력: 212up\n크리티컬확률: 100up",
+    "CharSprite": 0,
+    "CharName": "붉은여왕"
+  },
+  {
+    "AgeID": 1,
+    "AgeSprite": 1,
+    "AgeName": "난중일기",
+    "AgeInfo": "챕터 2는 난중일기입니다. 이순신 장군을 도와 명량해전을 승리로 이끄세요.\n",
+    "EmblemSprite": 1,
+    "EmblemName": "도깨비 호패",
+    "EmblemInfo": "공격력: 212\n방어력: 400up\n크리티컬확률: 300up",
+    "CharSprite": 1,
+    "CharName": "도깨비 호패"
+  },
+  {
+    "AgeID": 2,
+    "AgeSprite": 2,
+    "AgeName": "천일야화",
+    "AgeInfo": "챕터 3은 천일야화입니다.\n 신밧드가 되어 신비로운 동굴에 감춰진 황금을 찾으세요!\n",
+    "EmblemSprite": 2,
+    "EmblemName": "골드 엠블럼",
+    "EmblemInfo": "공격력: 113up\n방어력: 60\n크리티컬확률: 600",
+    "CharSprite": 2,
+    "CharName": "신밧드"
+  },
+  {
+    "AgeID": 3,
+    "AgeSprite": 3,
+    "AgeName": "헨젤과 그레텔",
+    "AgeInfo": "챕터 4는 헨젤과 그레텔입니다.\n 마녀와 괴물들을 피해 마녀의 묘약을 얻으세요!\n",
+    "EmblemSprite": 3,
+    "EmblemName": "마녀의 심장",
+    "EmblemInfo": "공격력: 114up\n방어력: 200up\n크리티컬확률: 300",
+    "CharSprite": 3,
+    "CharName": "헨젤과 그레텔"
+  },
+  {
+    "AgeID": 0,
+    "AgeSprite": 0,
+    "AgeName": "이상한 나라의 앨리스",
+    "AgeInfo": "챕터 1은 이상한 나라의 앨리스입니다.\n붉은 여왕의 분노에 맞서 블러드 루비를 탈환하세요 .\n ",
+    "EmblemSprite": 0,
+    "EmblemName": "블러드 루비",
+    "EmblemInfo": "공격력: 313up\n방어력: 212up\n크리티컬확률: 100up",
+    "CharSprite": 0,
+    "CharName": "붉은여왕"
+  },
+  {
+    "AgeID": 1,
+    "AgeSprite": 1,
+    "AgeName": "난중일기",
+    "AgeInfo": "챕터 2는 난중일기입니다. 이순신 장군을 도와 명량해전을 승리로 이끄세요.\n",
+    "EmblemSprite": 1,
+    "EmblemName": "도깨비 호패",
+    "EmblemInfo": "공격력: 212\n방어력: 400up\n크리티컬확률: 300up",
+    "CharSprite": 1,
+    "CharName": "이순신 장군"
+  },
+  {
+    "AgeID": 2,
+    "AgeSprite": 2,
+    "AgeName": "천일야화",
+    "AgeInfo": "챕터 3은 천일야화입니다.\n 신밧드가 되어 신비로운 동굴에 감춰진 황금을 찾으세요!\n",
+    "EmblemSprite": 2,
+    "EmblemName": "골드 엠블럼",
+    "EmblemInfo": "공격력: 113up\n방어력: 60\n크리티컬확률: 600",
+    "CharSprite": 2,
+    "CharName": "신밧드"
+  },
+  {
+    "AgeID": 3,
+    "AgeSprite": 3,
+    "AgeName": "헨젤과 그레텔",
+    "AgeInfo": "챕터 4는 헨젤과 그레텔입니다.\n 마녀와 괴물들을 피해 마녀의 묘약을 얻으세요!\n",
+    "EmblemSprite": 3,
+    "EmblemName": "마녀의 심장",
+    "EmblemInfo": "공격력: 114up\n방어력: 200up\n크리티컬확률: 300",
+    "CharSprite": 3,
+    "CharName": "헨젤과 그레텔"
+  }
+]

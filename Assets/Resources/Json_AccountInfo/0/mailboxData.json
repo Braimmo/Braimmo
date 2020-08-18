@@ -1,0 +1,122 @@
+[
+  {
+    "mail_title": "로그인 보상입니다.",
+    "mail_explanation": "2020.08.11(화) 로그인 보상입니다.",
+    "experience_Account": 20.0,
+    "experience_Character": 30.0,
+    "money": 500.0,
+    "gem": 0,
+    "itemList": [],
+    "conditionList": [
+      {
+        "conditionID": 101,
+        "conditionUniqueID": 1035,
+        "conditionName": "HPMT",
+        "conditionDescription": "내 체력 20% 이상",
+        "conditionParent": 0,
+        "conditionPositionX": 0.0,
+        "conditionPositionY": 0.0,
+        "goldValue": 888.8,
+        "conditionValue": 20.0,
+        "conditionPrefab": "Condition1",
+        "conditionValueState": "Up",
+        "usingCharID": -1
+      },
+      {
+        "conditionID": 101,
+        "conditionUniqueID": 1036,
+        "conditionName": "HPMT",
+        "conditionDescription": "내 체력 25% 이상",
+        "conditionParent": 0,
+        "conditionPositionX": 0.0,
+        "conditionPositionY": 0.0,
+        "goldValue": 888.8,
+        "conditionValue": 25.0,
+        "conditionPrefab": "Condition1",
+        "conditionValueState": "Up",
+        "usingCharID": -1
+      }
+    ],
+    "actionList": []
+  },
+  {
+    "mail_title": "로그인 보상입니다.",
+    "mail_explanation": "2020.08.11(화) 로그인 보상입니다.",
+    "experience_Account": 20.0,
+    "experience_Character": 30.0,
+    "money": 500.0,
+    "gem": 1,
+    "itemList": [],
+    "conditionList": [
+      {
+        "conditionID": 101,
+        "conditionUniqueID": 1035,
+        "conditionName": "HPMT",
+        "conditionDescription": "내 체력 20% 이상",
+        "conditionParent": 0,
+        "conditionPositionX": 0.0,
+        "conditionPositionY": 0.0,
+        "goldValue": 888.8,
+        "conditionValue": 20.0,
+        "conditionPrefab": "Condition1",
+        "conditionValueState": "Up",
+        "usingCharID": -1
+      },
+      {
+        "conditionID": 101,
+        "conditionUniqueID": 1036,
+        "conditionName": "HPMT",
+        "conditionDescription": "내 체력 25% 이상",
+        "conditionParent": 0,
+        "conditionPositionX": 0.0,
+        "conditionPositionY": 0.0,
+        "goldValue": 888.8,
+        "conditionValue": 25.0,
+        "conditionPrefab": "Condition1",
+        "conditionValueState": "Up",
+        "usingCharID": -1
+      }
+    ],
+    "actionList": []
+  },
+  {
+    "mail_title": "로그인 보상입니다.",
+    "mail_explanation": "2020.08.11(화) 로그인 보상입니다.",
+    "experience_Account": 20.0,
+    "experience_Character": 30.0,
+    "money": 500.0,
+    "gem": 2,
+    "itemList": [],
+    "conditionList": [
+      {
+        "conditionID": 101,
+        "conditionUniqueID": 1035,
+        "conditionName": "HPMT",
+        "conditionDescription": "내 체력 20% 이상",
+        "conditionParent": 0,
+        "conditionPositionX": 0.0,
+        "conditionPositionY": 0.0,
+        "goldValue": 888.8,
+        "conditionValue": 20.0,
+        "conditionPrefab": "Condition1",
+        "conditionValueState": "Up",
+        "usingCharID": -1
+      },
+      {
+        "conditionID": 101,
+        "conditionUniqueID": 1036,
+        "conditionName": "HPMT",
+        "conditionDescription": "내 체력 25% 이상",
+        "conditionParent": 0,
+        "conditionPositionX": 0.0,
+        "conditionPositionY": 0.0,
+        "goldValue": 888.8,
+        "conditionValue": 25.0,
+        "conditionPrefab": "Condition1",
+        "conditionValueState": "Up",
+        "usingCharID": -1
+      }
+    ],
+    "actionList": []
+  }
+]

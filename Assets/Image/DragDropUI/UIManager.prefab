@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4807017148475110261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807017148475110265}
+  - component: {fileID: 4807017148475110263}
+  - component: {fileID: 3620838147817454577}
+  - component: {fileID: 4807017148475110262}
+  - component: {fileID: 4807017148475110260}
+  - component: {fileID: 8514370575010014520}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807017148475110265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807017148475110261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3183, y: 366.0615, z: -7.875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4807017148475110263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807017148475110261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d308b00c10ad6e1459be71f4601b7b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codeList: {fileID: 0}
+  deletePrefab: {fileID: 4371740821088741388, guid: a533d342ae9afb14f8149a2cbfe8193e,
+    type: 3}
+  kyleOpenClose: 1
+  boxEnabled: 0
+  beingPressed: {fileID: 0}
+  previousAnimatedOne: {fileID: 0}
+  previousID: 0
+  canIConnectNow: 0
+  somethingChanged: 0
+  TargetPanel: {fileID: 0}
+  goBackPopUpOpened: 0
+  goBackPopUp: {fileID: 0}
+--- !u!114 &3620838147817454577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807017148475110261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b05e5e59cf9929448e2c2f50b96c69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClosestCheck: {fileID: 0}
+  FarthestCheck: {fileID: 0}
+  ForBoss: {fileID: 0}
+  ForMiniBoss: {fileID: 0}
+  ForMelee: {fileID: 0}
+  ForRange: {fileID: 0}
+  ForTank: {fileID: 0}
+--- !u!114 &4807017148475110262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807017148475110261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbc045b8e1bf02d439d2888956aae7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tx: {fileID: 0}
+  actionPrefab: {fileID: 1620026349537202102, guid: 157a44b7edd04214ab84a04e5962b8a0,
+    type: 3}
+  parentPrefab: {fileID: 6440752566673283705, guid: a2703a9c2530b45429c4a4c11a35905c,
+    type: 3}
+  movementOnList: []
+  movementOnListNum: 0
+  attackOnList: []
+  attackOnListNum: 0
+  itemOnList: []
+  itemOnListNum: 0
+  movementOffList: []
+  movementOffListNum: 0
+  attackOffList: []
+  attackOffListNum: 0
+  itemOffList: []
+  itemOffListNum: 0
+--- !u!114 &4807017148475110260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807017148475110261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5db876a9e38b0438fb1d0d9a29f054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tx: {fileID: 0}
+  conditionPrefab: {fileID: 2973232642885424757, guid: 00fc1bd8ce5f2a24391ada615e5a445a,
+    type: 3}
+  parentPrefab: {fileID: 6019436029937608132, guid: a39e21a7a259a404fba9633c5c1ff30d,
+    type: 3}
+  hpOnList: []
+  hpOnListNum: 0
+  stateOnList: []
+  stateOnListNum: 0
+  radiusOnList: []
+  radiusOnListNum: 0
+  actionCheckerOnList: []
+  actionCheckerOnListNum: 0
+  hpOffList: []
+  hpOffListNum: 0
+  stateOffList: []
+  stateOffListNum: 0
+  radiusOffList: []
+  radiusOffListNum: 0
+  actionCheckerOffList: []
+  actionCheckerOffListNum: 0
+--- !u!114 &8514370575010014520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807017148475110261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0e85266f1566c4f9ad0d474b26968f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

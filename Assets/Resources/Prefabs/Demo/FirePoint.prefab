@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8045476838996272439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8045476838996272432}
+  - component: {fileID: 8045476838996272433}
+  - component: {fileID: 8045476838996272438}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8045476838996272432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045476838996272439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8045476838996272433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045476838996272439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f29a1423000558489cd7dd36ce877f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab_Bot1: {fileID: 7056448791990812529, guid: 220a419d9e1a2614d95fc7b7f11fb1f2,
+    type: 3}
+  enemyPrefab_Bot2_Shotgun: {fileID: 8392680989603307436, guid: c71f64998a4c9ca49b642e991058f6dd,
+    type: 3}
+  enemyPrefab_Bot2_Gun: {fileID: 8392680989603307436, guid: c71f64998a4c9ca49b642e991058f6dd,
+    type: 3}
+  enemyPrefab_Bot3_Boss: {fileID: 3738370300511974912, guid: 545c7688ca486f4408d243a2f1c84495,
+    type: 3}
+  dieEnemyIndex: 0
+  xMin: -10
+  i: 0
+  aimPrefab: {fileID: 3448073348517799489, guid: d162180e87e566742ae1c9afa2f0a43b,
+    type: 3}
+  aimCount: 1
+  enemyDistance: 0
+--- !u!50 &8045476838996272438
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045476838996272439}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

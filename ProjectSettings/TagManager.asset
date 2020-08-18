@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Icon
+  - Action
+  - Label
+  - AddedAction
+  - EquipmentPanel
+  - Inventory
+  - Background
+  - ActionID
+  - Condition
+  - AddedCondition
+  - DeleteButton
+  - ReferenceID
+  - StatsPanel
+  - goBackPanel
+  - CharacterLevel
+  - awardExplainPanel
+  - Enemybot1
+  - Weapon
+  - Enemybot2_Gun
+  - Enemybot3
+  - Bullet
+  - Camera_Active
+  - Camera_notActive
+  - characterSlot
+  - Alive
+  - Dead
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Icon
+  - EquipmentPanel
+  - Inventory
+  - ExplainPanel
+  - goBackPanel
+  - info
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: stage3
+    uniqueID: 1630199025
+    locked: 0
+  - name: stage10
+    uniqueID: 711554261
+    locked: 0
+  - name: stage9
+    uniqueID: 2083415279
+    locked: 0
+  - name: stage8
+    uniqueID: 3450327819
+    locked: 0
+  - name: stage7
+    uniqueID: 2642958893
+    locked: 0
+  - name: stage6
+    uniqueID: 2629701105
+    locked: 0
+  - name: stage5
+    uniqueID: 2911122335
+    locked: 0
+  - name: stage4
+    uniqueID: 1474468463
+    locked: 0
+  - name: stage2
+    uniqueID: 3880845041
+    locked: 0
+  - name: stage1
+    uniqueID: 3248659047
+    locked: 0

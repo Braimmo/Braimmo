@@ -1,0 +1,92 @@
+[
+  {
+    "actionID": 1,
+    "actionName": "useWeapon",
+    "actionDescription": "무기 사용",
+    "actionParent": 2,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  },
+  {
+    "actionID": 2,
+    "actionName": "useHealthPotion",
+    "actionDescription": "체력 포션 사용",
+    "actionParent": 3,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  },
+  {
+    "actionID": 3,
+    "actionName": "moveForward",
+    "actionDescription": "타겟에게 전진",
+    "actionParent": 1,
+    "actionUsed": 1,
+    "actionPositionX": -223.8115,
+    "actionPositionY": 224.284027
+  },
+  {
+    "actionID": 4,
+    "actionName": "moveBackward",
+    "actionDescription": "타겟에게서 후진",
+    "actionParent": 1,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  },
+  {
+    "actionID": 5,
+    "actionName": "moveLeft",
+    "actionDescription": "타겟의 좌측으로 이동",
+    "actionParent": 1,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  },
+  {
+    "actionID": 6,
+    "actionName": "moveRight",
+    "actionDescription": "타겟의 우측으로 이동",
+    "actionParent": 1,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  },
+  {
+    "actionID": 7,
+    "actionName": "moveNorth",
+    "actionDescription": "맵의 위쪽으로 이동",
+    "actionParent": 1,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  },
+  {
+    "actionID": 8,
+    "actionName": "moveSouth",
+    "actionDescription": "맵의 아래쪽으로 이동",
+    "actionParent": 1,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  },
+  {
+    "actionID": 9,
+    "actionName": "moveWest",
+    "actionDescription": "맵의 왼쪽으로 이동",
+    "actionParent": 1,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  },
+  {
+    "actionID": 10,
+    "actionName": "moveEast",
+    "actionDescription": "맵의 오른쪽으로 이동",
+    "actionParent": 1,
+    "actionUsed": 2,
+    "actionPositionX": 0.0,
+    "actionPositionY": 0.0
+  }
+]

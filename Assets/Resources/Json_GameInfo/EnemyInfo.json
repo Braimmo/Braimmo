@@ -1,0 +1,28 @@
+[
+  {
+    "characterID": 0,
+    "name": "카드병정1",
+    "level": 1,
+    "health": 100.0,
+    "damage": 10.0,
+    "weaponRange": 10.0,
+    "speed": 5.0,
+    "defense": 100.0,
+    "criticalRate": 50.0,
+    "criticalDamage": 10.0,
+    "prefabID": "3"
+  },
+  {
+    "characterID": 1,
+    "name": "카드병정2",
+    "level": 1,
+    "health": 100.0,
+    "damage": 20.0,
+    "weaponRange": 10.0,
+    "speed": 7.0,
+    "defense": 100.0,
+    "criticalRate": 50.0,
+    "criticalDamage": 50.0,
+    "prefabID": "3"
+  }
+]

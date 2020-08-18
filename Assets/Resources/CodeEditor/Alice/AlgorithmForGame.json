@@ -1,0 +1,11 @@
+[
+  {
+    "actionID": 3,
+    "ConditionCombine": [
+      {
+        "conditionName": "EnemyLT",
+        "conditionValue": 1.0
+      }
+    ]
+  }
+]

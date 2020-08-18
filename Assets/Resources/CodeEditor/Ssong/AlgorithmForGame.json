@@ -1,0 +1,38 @@
+[
+  {
+    "actionID": 3,
+    "ConditionCombine": [
+      {
+        "conditionName": "HPMT",
+        "conditionValue": 50.0
+      }
+    ]
+  },
+  {
+    "actionID": 1,
+    "ConditionCombine": [
+      {
+        "conditionName": "HPMT",
+        "conditionValue": 30.0
+      }
+    ]
+  },
+  {
+    "actionID": 4,
+    "ConditionCombine": [
+      {
+        "conditionName": "HPLT",
+        "conditionValue": 40.0
+      }
+    ]
+  },
+  {
+    "actionID": 2,
+    "ConditionCombine": [
+      {
+        "conditionName": "HPMT",
+        "conditionValue": 25.0
+      }
+    ]
+  }
+]

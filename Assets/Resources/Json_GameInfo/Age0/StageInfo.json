@@ -1,0 +1,117 @@
+[
+  {
+    "ageID": 0,
+    "stageID": 0,
+    "stageInfo": "카드병정 1마리를 물리치세요",
+    "stageLevel": 1,
+    "ageName": "이상한 나라의 앨리스",
+    "ageInfo": "챕터 1은 이상한 나라의 앨리스입니다.\n붉은 여왕의 분노에 맞서 블러드 루비를 탈환하세요 .\n ",
+    "emblemInfo": "게임 플레이시 카드 병정 1마리 소환 가능",
+    "emblemName": "블러드 루비",
+    "emblemID": 0,
+    "awards": [
+      {
+        "AwardImage": 0,
+        "AwardName": "조건1",
+        "AwardInfo": "뫄뫄하는 조건입니다"
+      },
+      {
+        "AwardImage": 1,
+        "AwardName": "액션1",
+        "AwardInfo": "뫄뫄하는 액션입니다"
+      },
+      {
+        "AwardImage": 2,
+        "AwardName": "아이템1",
+        "AwardInfo": "뫄뫄하는 아이템입니다"
+      }
+    ],
+    "enemyNumber": 1,
+    "enemyIds": [
+      0
+    ],
+    "enemyStatMultiplier": 0.0,
+    "charNumber": 1,
+    "experience": 0.0,
+    "money": 1000.0,
+    "gem": 100,
+    "selectedCharacterIDs": null
+  },
+  {
+    "ageID": 0,
+    "stageID": 1,
+    "stageInfo": "카드병정 1마리를 물리치세요",
+    "stageLevel": 2,
+    "ageName": "이상한 나라의 앨리스",
+    "ageInfo": "챕터 1은 이상한 나라의 앨리스입니다.\n붉은 여왕의 분노에 맞서 블러드 루비를 탈환하세요 .\n ",
+    "emblemInfo": "게임 플레이시 카드 병정 1마리 소환 가능",
+    "emblemName": "블러드 루비",
+    "emblemID": 0,
+    "awards": [
+      {
+        "AwardImage": 0,
+        "AwardName": "조건1",
+        "AwardInfo": "뫄뫄하는 조건입니다"
+      },
+      {
+        "AwardImage": 1,
+        "AwardName": "액션1",
+        "AwardInfo": "뫄뫄하는 액션입니다"
+      },
+      {
+        "AwardImage": 2,
+        "AwardName": "아이템1",
+        "AwardInfo": "뫄뫄하는 아이템입니다"
+      }
+    ],
+    "enemyNumber": 1,
+    "enemyIds": [
+      0
+    ],
+    "enemyStatMultiplier": 0.0,
+    "charNumber": 1,
+    "experience": 0.0,
+    "money": 1000.0,
+    "gem": 100,
+    "selectedCharacterIDs": null
+  },
+  {
+    "ageID": 0,
+    "stageID": 2,
+    "stageInfo": "카드병정 2마리를 물리치세요",
+    "stageLevel": 3,
+    "ageName": "이상한 나라의 앨리스",
+    "ageInfo": "챕터 1은 이상한 나라의 앨리스입니다.\n붉은 여왕의 분노에 맞서 블러드 루비를 탈환하세요 .\n ",
+    "emblemInfo": "게임 플레이시 카드 병정 1마리 소환 가능",
+    "emblemName": "블러드 루비",
+    "emblemID": 0,
+    "awards": [
+      {
+        "AwardImage": 0,
+        "AwardName": "조건1",
+        "AwardInfo": "뫄뫄하는 조건입니다"
+      },
+      {
+        "AwardImage": 1,
+        "AwardName": "액션1",
+        "AwardInfo": "뫄뫄하는 액션입니다"
+      },
+      {
+        "AwardImage": 2,
+        "AwardName": "아이템1",
+        "AwardInfo": "뫄뫄하는 아이템입니다"
+      }
+    ],
+    "enemyNumber": 2,
+    "enemyIds": [
+      0,
+      1
+    ],
+    "enemyStatMultiplier": 0.0,
+    "charNumber": 1,
+    "experience": 0.0,
+    "money": 1000.0,
+    "gem": 100,
+    "selectedCharacterIDs": null
+  }
+]
